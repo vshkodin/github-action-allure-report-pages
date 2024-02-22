@@ -1,1 +1,1 @@
-# github-action-allure-report-pages-
+# github-action-allure-report-pages
