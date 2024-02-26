@@ -27,11 +27,11 @@ jobs:
       - name: Prepare Allure history
         run: |
           cd ..
-          mkdir -p ${{ vars.ALLURE_RESULTS_PATH }}
+          mkdir -p allure-results
 
       - name: Run tests with pytest
         run: |
-          python -m pytest -v --alluredir=../${{ vars.ALLURE_RESULTS_PATH }}
+          python -m pytest -v --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v3
@@ -45,7 +45,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: ${{ vars.ALLURE_RESULTS_PATH }}
+          allure_results: allure-results
           allure_history: allure-history
           keep_reports: 5
 
