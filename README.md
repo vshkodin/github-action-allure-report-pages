@@ -12,4 +12,4 @@ Then, under the "Branch" dropdown, choose the branch  gh-pages then "Save".
 
 4. Run the Workflow
 
-5. Navigate to Pages
+5. Navigate to Pages https://vshkodin.com/github-action-allure-report-pages
