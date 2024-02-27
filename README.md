@@ -10,4 +10,4 @@ Then, under the "Branch" dropdown, choose the branch  gh-pages then "Save".
 
 4. Run the Workflow
 
-5. Navigate to Page
+5. Navigate to Pages
